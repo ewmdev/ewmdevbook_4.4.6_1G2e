@@ -20,7 +20,7 @@ CLASS ZCL_IM_CORE_RMS_OPUNIT IMPLEMENTATION.
 
     DATA: lt_cont  TYPE /scwm/tt_packspec_nested.
 
-    BREAK-POINT ID zewmdevbook_446.
+    BREAK-POINT ID zewmdevbook_1g2e.
     "Set standard value
     ev_opunit = is_ltap-altme.
     "Check context – only pick-WTs are considered
@@ -74,7 +74,7 @@ CLASS ZCL_IM_CORE_RMS_OPUNIT IMPLEMENTATION.
       "Set operative unit of measure
       ev_opunit = <pslevel>-operat_unit.
       "Operative unit of measure &1 set.
-      MESSAGE s001(zewmdevbook_446) WITH ev_opunit
+      MESSAGE s001(zewmdevbook_1g2e) WITH ev_opunit
       INTO DATA(lv_msg).
     ENDLOOP.
     IF NOT lv_msg IS INITIAL.
